@@ -1,0 +1,56 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f4;
+}
+
+nav {
+  border: solid 1px #252525;
+  box-shadow: 0 4px 8px 0 rgba(0, 3, 5, 0.568);
+  height: 8rem;
+  background-image: url("../assets/Rectangle.png");
+}
+
+.navbar .container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  max-height: 50px; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+}
+
+.icon-container {
+  background-color: #ffffff; /* Fundo branco */
+  padding: 5px; /* Espaço ao redor do ícone */
+  border-radius: 50%; /* Torna o fundo arredondado */
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.navbar .icon {
+  max-height: 40px; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+  width: auto; /* Mantém a proporção da imagem */
+  border-radius: 50%;
+}
+
+.navbar .icon:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(32, 173, 255, 0.568);
+  background: linear-gradient(to bottom, #ffffff, #76d4ff3a);
+}
+
+@media (max-width: 767.98px) {
+  .navbar .icon-container {
+    margin-left: 0; /* Remove a margem em telas menores */
+  }
+}

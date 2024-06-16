@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <img
+      src="../assets/OiaShop.png"
+      alt="logo"
+      (click)="navigateToLogin()"
+      class="logo"
+      style="cursor: pointer"
+    />
+    <div class="icon-container">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png"
+        alt="perfil"
+        class="icon"
+        style="cursor: pointer"
+        (click)="navigateToProfile()"
+      />
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>

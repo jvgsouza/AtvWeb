@@ -1,0 +1,92 @@
+.cardItens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.productImage {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.group-text {
+  flex: 1;
+  margin-right: 1rem;
+  max-width: 500px;
+}
+
+.group-text h2,
+.group-text h6 {
+  margin-right: 1rem;
+}
+
+.group-text p {
+  font-weight: bold;
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+
+.group-text div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.group-text div .btn {
+  margin-right: 1rem;
+}
+
+.group-text div .btn img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  margin-bottom: 3px;
+}
+
+@media (max-width: 768px) {
+  .cardItens {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .group-text {
+    margin-right: 0;
+  }
+
+  .group-text h2,
+  .group-text h6,
+  .group-text p {
+    margin-right: 0;
+  }
+
+  .group-text p {
+    font-size: 2rem;
+  }
+
+  .group-text div {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .group-text div .btn {
+    margin-right: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .group-text p {
+    font-size: 1.5rem;
+  }
+
+  .group-text div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .group-text div .btn {
+    margin: 0.5rem 0;
+  }
+}
